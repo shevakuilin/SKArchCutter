@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "SKArchCutter.h"
+#import "SKTestViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIView *myView;
@@ -35,6 +36,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)toTest:(id)sender {
+    UIViewController * testVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"test"];
+    [self presentViewController:testVC animated:YES completion:nil];
 }
 
 
