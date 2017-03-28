@@ -21,6 +21,8 @@ SKArchCutter是一个可自选切割角的圆角切割工具，同时支持UIVie
 
 2.直接将目录下的SKArchCutter拷贝到工程中，或在podfile文件夹中添加 ```pod 'SKArchCutter'```
 
+3.如果觉得还不错，点个star吧~
+
 
 # 使用方法
 

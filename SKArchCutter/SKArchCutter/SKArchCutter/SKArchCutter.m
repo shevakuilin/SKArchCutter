@@ -74,6 +74,7 @@
 #pragma mark - 切割UIImageView
 - (void)cuttingImageView:(UIImageView *)imageView
 {
+    // 先截取UIImageView视图Layer生成的Image，然后再做渲染
     UIImage * image = nil;
     UIGraphicsBeginImageContextWithOptions(imageView.bounds.size, NO, [UIScreen mainScreen].scale);
     CGContextRef currnetContext = UIGraphicsGetCurrentContext();
