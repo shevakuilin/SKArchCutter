@@ -49,11 +49,11 @@
         
     } else if ([object isKindOfClass:[UIButton class]]) {
         UIButton * button = object;
-        [self cuttingButton:button];
+        [self cuttingView:button];
         
     } else if ([object isKindOfClass:[UILabel class]]) {
         UILabel * label = object;
-        [self cuttingLabel:label];
+        [self cuttingView:label];
         
     } else {
         return ;
@@ -61,7 +61,7 @@
 
 }
 
-#pragma mark - 切割UIView
+#pragma mark - 切割UIView、UIButton和UILabel
 - (void)cuttingView:(UIView *)view;
 {
     UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:view.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
@@ -94,24 +94,24 @@
     }
 }
 
-#pragma mark - 切割UIButton
-- (void)cuttingButton:(UIButton *)button
-{
-    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:button.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
-    CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = button.bounds;
-    maskLayer.path = maskPath.CGPath;
-    button.layer.mask = maskLayer;
-}
-
-#pragma mark - 切割UILabel
-- (void)cuttingLabel:(UILabel *)label
-{
-    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:label.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
-    CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = label.bounds;
-    maskLayer.path = maskPath.CGPath;
-    label.layer.mask = maskLayer;
-}
+//#pragma mark - 切割UIButton
+//- (void)cuttingButton:(UIButton *)button
+//{
+//    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:button.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
+//    CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
+//    maskLayer.frame = button.bounds;
+//    maskLayer.path = maskPath.CGPath;
+//    button.layer.mask = maskLayer;
+//}
+//
+//#pragma mark - 切割UILabel
+//- (void)cuttingLabel:(UILabel *)label
+//{
+//    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:label.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
+//    CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
+//    maskLayer.frame = label.bounds;
+//    maskLayer.path = maskPath.CGPath;
+//    label.layer.mask = maskLayer;
+//}
 
 @end
