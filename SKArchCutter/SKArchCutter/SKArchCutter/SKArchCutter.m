@@ -94,24 +94,4 @@
     }
 }
 
-//#pragma mark - 切割UIButton
-//- (void)cuttingButton:(UIButton *)button
-//{
-//    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:button.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
-//    CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
-//    maskLayer.frame = button.bounds;
-//    maskLayer.path = maskPath.CGPath;
-//    button.layer.mask = maskLayer;
-//}
-//
-//#pragma mark - 切割UILabel
-//- (void)cuttingLabel:(UILabel *)label
-//{
-//    UIBezierPath * maskPath = [UIBezierPath bezierPathWithRoundedRect:label.bounds byRoundingCorners:self.direction cornerRadii:CGSizeMake(self.cornerRadii, self.cornerRadii)];
-//    CAShapeLayer * maskLayer = [[CAShapeLayer alloc] init];
-//    maskLayer.frame = label.bounds;
-//    maskLayer.path = maskPath.CGPath;
-//    label.layer.mask = maskLayer;
-//}
-
 @end

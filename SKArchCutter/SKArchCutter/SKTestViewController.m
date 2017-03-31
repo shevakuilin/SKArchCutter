@@ -7,9 +7,11 @@
 //
 
 #import "SKTestViewController.h"
+#import "SKArchCutter.h"
 
 @interface SKTestViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *myTableView;
+@property (strong, nonatomic) SKArchCutter * archCutter;
 
 @end
 
@@ -19,6 +21,8 @@
     [super viewDidLoad];
     _myTableView.tableFooterView = [UIView new];
     [_myTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
+    self.archCutter = [[SKArchCutter alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,6 +50,7 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     cell.imageView.image = [UIImage imageNamed:@"new_loading25_400x400_@1x"];
+    [self.archCutter cuttingWithObject:cell.imageView.image direction:UIRectCornerAllCorners cornerRadii:10];
     
     return cell;
 }
