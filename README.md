@@ -38,20 +38,9 @@ SKArchCutter是一个可自选切割角的圆角切割工具，同时支持UIVie
 ```objectivec
 #import "SKArchCutter.h"
 ```
-~~
-#### 初始化
-```objectivec
-SKArchCutter * archCutter = [[SKArchCutter alloc] init];
-
-```
-~~
 
 #### 进行圆角切割
-~~
-```objectivec
-[archCutter cuttingWithObject:self.myImageView direction:UIRectCornerBottomRight | UIRectCornerTopRight cornerRadii:10]; 
-```
-~~
+
 
 UIView/UIButton/UILabel
 ```objectivec
