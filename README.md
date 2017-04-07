@@ -5,6 +5,8 @@ SKArchCutter是一个可自选切割角的圆角切割工具，同时支持UIVie
 
 # 最新更新
 
+- [Swift3.0版](https://github.com/shevakuilin/SKArchCutter-Swift)
+
 - 解决使用Masonry布局无法及时获取frame信息的兼容问题
 
 - 解决使用border而导致的失效问题
