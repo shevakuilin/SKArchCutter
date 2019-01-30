@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FEB30DD2201B8150064DFD9 /* SKArchCutter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FEB30DB2201B8150064DFD9 /* SKArchCutter.m */; };
 		E42FA62B1E8A2D7A00DD9DFC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FA62A1E8A2D7A00DD9DFC /* main.m */; };
 		E42FA62E1E8A2D7A00DD9DFC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FA62D1E8A2D7A00DD9DFC /* AppDelegate.m */; };
 		E42FA6311E8A2D7A00DD9DFC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FA6301E8A2D7A00DD9DFC /* ViewController.m */; };
 		E42FA6341E8A2D7A00DD9DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42FA6321E8A2D7A00DD9DFC /* Main.storyboard */; };
 		E42FA6361E8A2D7A00DD9DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E42FA6351E8A2D7A00DD9DFC /* Assets.xcassets */; };
 		E42FA6391E8A2D7A00DD9DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E42FA6371E8A2D7A00DD9DFC /* LaunchScreen.storyboard */; };
-		E42FA6431E8A2DCD00DD9DFC /* SKArchCutter.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FA6421E8A2DCD00DD9DFC /* SKArchCutter.m */; };
 		E42FA64C1E8A720C00DD9DFC /* SKTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E42FA64B1E8A720C00DD9DFC /* SKTestViewController.m */; };
 		E49B055A1E90A039007D230C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E49B053E1E90A039007D230C /* LICENSE */; };
 		E49B055B1E90A039007D230C /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = E49B05411E90A039007D230C /* MASCompositeConstraint.m */; };
@@ -30,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9FEB30DB2201B8150064DFD9 /* SKArchCutter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArchCutter.m; sourceTree = "<group>"; };
+		9FEB30DC2201B8150064DFD9 /* SKArchCutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKArchCutter.h; sourceTree = "<group>"; };
 		E42FA6261E8A2D7A00DD9DFC /* SKArchCutter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKArchCutter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E42FA62A1E8A2D7A00DD9DFC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E42FA62C1E8A2D7A00DD9DFC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,8 +42,6 @@
 		E42FA6351E8A2D7A00DD9DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E42FA6381E8A2D7A00DD9DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E42FA63A1E8A2D7A00DD9DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E42FA6411E8A2DCD00DD9DFC /* SKArchCutter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKArchCutter.h; sourceTree = "<group>"; };
-		E42FA6421E8A2DCD00DD9DFC /* SKArchCutter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKArchCutter.m; sourceTree = "<group>"; };
 		E42FA64A1E8A720C00DD9DFC /* SKTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTestViewController.h; sourceTree = "<group>"; };
 		E42FA64B1E8A720C00DD9DFC /* SKTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTestViewController.m; sourceTree = "<group>"; };
 		E49B053E1E90A039007D230C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -84,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FEB30DA2201B8150064DFD9 /* SKArchCutter */ = {
+			isa = PBXGroup;
+			children = (
+				9FEB30DB2201B8150064DFD9 /* SKArchCutter.m */,
+				9FEB30DC2201B8150064DFD9 /* SKArchCutter.h */,
+			);
+			name = SKArchCutter;
+			path = ../../Source/SKArchCutter;
+			sourceTree = "<group>";
+		};
 		E42FA61D1E8A2D7A00DD9DFC = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +113,8 @@
 		E42FA6281E8A2D7A00DD9DFC /* SKArchCutter */ = {
 			isa = PBXGroup;
 			children = (
+				9FEB30DA2201B8150064DFD9 /* SKArchCutter */,
 				E49B053D1E90A039007D230C /* Masonry */,
-				E42FA6401E8A2DB400DD9DFC /* SKArchCutter */,
 				E42FA62C1E8A2D7A00DD9DFC /* AppDelegate.h */,
 				E42FA62D1E8A2D7A00DD9DFC /* AppDelegate.m */,
 				E42FA62F1E8A2D7A00DD9DFC /* ViewController.h */,
@@ -126,15 +136,6 @@
 				E42FA62A1E8A2D7A00DD9DFC /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E42FA6401E8A2DB400DD9DFC /* SKArchCutter */ = {
-			isa = PBXGroup;
-			children = (
-				E42FA6411E8A2DCD00DD9DFC /* SKArchCutter.h */,
-				E42FA6421E8A2DCD00DD9DFC /* SKArchCutter.m */,
-			);
-			path = SKArchCutter;
 			sourceTree = "<group>";
 		};
 		E49B053D1E90A039007D230C /* Masonry */ = {
@@ -253,7 +254,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49B05621E90A039007D230C /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				E42FA6431E8A2DCD00DD9DFC /* SKArchCutter.m in Sources */,
 				E49B05601E90A039007D230C /* MASViewConstraint.m in Sources */,
 				E42FA6311E8A2D7A00DD9DFC /* ViewController.m in Sources */,
 				E42FA62E1E8A2D7A00DD9DFC /* AppDelegate.m in Sources */,
@@ -265,6 +265,7 @@
 				E49B055D1E90A039007D230C /* MASConstraintMaker.m in Sources */,
 				E49B05611E90A039007D230C /* NSArray+MASAdditions.m in Sources */,
 				E49B05641E90A039007D230C /* ViewController+MASAdditions.m in Sources */,
+				9FEB30DD2201B8150064DFD9 /* SKArchCutter.m in Sources */,
 				E49B055C1E90A039007D230C /* MASConstraint.m in Sources */,
 				E49B055E1E90A039007D230C /* MASLayoutConstraint.m in Sources */,
 				E42FA62B1E8A2D7A00DD9DFC /* main.m in Sources */,
