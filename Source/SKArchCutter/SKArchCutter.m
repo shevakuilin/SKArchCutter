@@ -61,7 +61,7 @@
                     CGContextAddArcToPoint(currnetContext, width - borderWidth, borderWidth, width - borderWidth - cornerRadii, borderWidth, cornerRadii);
                     
                 } else {
-                    CGContextAddLineToPoint(currnetContext, height - borderWidth, borderWidth);// 右侧线
+                    CGContextAddLineToPoint(currnetContext, width - borderWidth, borderWidth);// 右侧线
                 }
                 CGContextAddLineToPoint(currnetContext, borderWidth + cornerRadii, borderWidth);
                 
