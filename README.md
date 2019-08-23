@@ -6,7 +6,7 @@ SKArchCutter是一个可自选切割角的圆角切割工具，同时支持UIVie
 ![](https://img.shields.io/badge/platform-iOS-green.svg)
 ![](https://img.shields.io/badge/pod-v1.6.0.beta.1-blue.svg)
 ![](https://img.shields.io/badge/language-ObjectiveC-purple.svg)
-![](https://img.shields.io/badge/moduleVersion-v0.0.5-red.svg)
+![](https://img.shields.io/badge/moduleVersion-v0.0.6-red.svg)
 
 # 最新更新
 
